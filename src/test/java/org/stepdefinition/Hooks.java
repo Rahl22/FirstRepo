@@ -15,7 +15,8 @@ public class Hooks extends BaseClass{
 	}
 	
 	@After	
-	public void postConditions() {
+	public void postConditions() throws InterruptedException {
+		Thread.sleep(3000);
 		close();
 	}
 }
